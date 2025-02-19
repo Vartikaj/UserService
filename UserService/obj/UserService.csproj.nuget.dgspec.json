@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService\\UserService.csproj": {}
+    "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService\\UserService.csproj": {
+    "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService\\UserService.csproj",
+        "projectUniqueName": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService\\UserService.csproj",
+        "projectPath": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService.csproj",
         "packagesPath": "C:\\Users\\Hied\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService\\obj\\",
+        "outputPath": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hied\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,9 +45,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.2, )"
             }
           },
           "imports": [

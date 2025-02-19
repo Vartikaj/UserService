@@ -1,15 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "OvTpqbACokS3oytANitFLhPRiBZ6wOI0FZCL8Uc8dDXpl4/+cT2K0JyQK22ixjKuIKgUDCeNG7xs9PjY1SSIEw==",
+  "dgSpecHash": "HA0tAEUNEW00ZA9YgGcFFVylIVvrnuKcpj5vl8qm33HymZltVkH7sSvn+a9JhHT4zFfL78G6ycorER0wmTUrqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService\\UserService.csproj",
+  "projectFilePath": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hied\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Hied\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Hied\\.nuget\\packages\\rabbitmq.client\\7.0.0\\rabbitmq.client.7.0.0.nupkg.sha512",
     "C:\\Users\\Hied\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\Hied\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\Hied\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "C:\\Users\\Hied\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    "C:\\Users\\Hied\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "C:\\Users\\Hied\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.2\\system.configuration.configurationmanager.9.0.2.nupkg.sha512",
+    "C:\\Users\\Hied\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.2\\system.diagnostics.eventlog.9.0.2.nupkg.sha512",
+    "C:\\Users\\Hied\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
+    "C:\\Users\\Hied\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.2\\system.security.cryptography.protecteddata.9.0.2.nupkg.sha512",
+    "C:\\Users\\Hied\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
