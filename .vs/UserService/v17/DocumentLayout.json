@@ -11,24 +11,32 @@
       "RelativeMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|solutionrelative:userservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|c:\\users\\hied\\desktop\\projectdevelopment\\grpc\\userservice\\userservice\\utility\\servicetoscope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|solutionrelative:userservice\\utility\\servicetoscope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|c:\\users\\hied\\desktop\\projectdevelopment\\grpc\\userservice\\userservice\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|solutionrelative:userservice\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|c:\\users\\hied\\desktop\\projectdevelopment\\grpc\\userservice\\userservice\\interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|solutionrelative:userservice\\interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|c:\\users\\hied\\desktop\\projectdevelopment\\grpc\\userservice\\userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|solutionrelative:userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|c:\\users\\hied\\desktop\\projectdevelopment\\grpc\\userservice\\userservice\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|solutionrelative:userservice\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|c:\\users\\hied\\desktop\\projectdevelopment\\grpc\\userservice\\userservice\\utility\\servicetoscope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|solutionrelative:userservice\\utility\\servicetoscope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|c:\\users\\hied\\desktop\\projectdevelopment\\grpc\\userservice\\userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|solutionrelative:userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|c:\\users\\hied\\desktop\\projectdevelopment\\grpc\\userservice\\userservice\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|solutionrelative:userservice\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|c:\\users\\hied\\desktop\\projectdevelopment\\grpc\\userservice\\userservice\\interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|solutionrelative:userservice\\interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|c:\\users\\hied\\desktop\\projectdevelopment\\grpc\\userservice\\userservice\\services\\grpcuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34000E88-8AFC-40A1-A8B4-645BA6E4535D}|UserService\\UserService.csproj|solutionrelative:userservice\\services\\grpcuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,99 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 32,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserService",
-              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService.csproj",
-              "RelativeDocumentMoniker": "UserService\\UserService.csproj",
-              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService.csproj",
-              "RelativeToolTip": "UserService\\UserService.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-20T12:18:09.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Program.cs",
-              "RelativeDocumentMoniker": "UserService\\Program.cs",
-              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Program.cs",
-              "RelativeToolTip": "UserService\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T07:04:20.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "UserService\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Services\\UserService.cs",
-              "RelativeToolTip": "UserService\\Services\\UserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T06:36:06.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServiceToScope.cs",
-              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Utility\\ServiceToScope.cs",
-              "RelativeDocumentMoniker": "UserService\\Utility\\ServiceToScope.cs",
-              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Utility\\ServiceToScope.cs",
-              "RelativeToolTip": "UserService\\Utility\\ServiceToScope.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAswAoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T06:35:34.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "UserService\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Controllers\\UserController.cs",
-              "RelativeToolTip": "UserService\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T06:32:52.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Models\\User.cs",
-              "RelativeDocumentMoniker": "UserService\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Models\\User.cs",
-              "RelativeToolTip": "UserService\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T06:34:18.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IUser.cs",
-              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Interfaces\\IUser.cs",
-              "RelativeDocumentMoniker": "UserService\\Interfaces\\IUser.cs",
-              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Interfaces\\IUser.cs",
-              "RelativeToolTip": "UserService\\Interfaces\\IUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T06:34:02.511Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -229,7 +146,128 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\appsettings.json",
+              "RelativeDocumentMoniker": "UserService\\appsettings.json",
+              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\appsettings.json",
+              "RelativeToolTip": "UserService\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-21T10:49:43.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "grpcUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Services\\grpcUserService.cs",
+              "RelativeDocumentMoniker": "UserService\\Services\\grpcUserService.cs",
+              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Services\\grpcUserService.cs",
+              "RelativeToolTip": "UserService\\Services\\grpcUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T05:34:25.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Models\\User.cs",
+              "RelativeDocumentMoniker": "UserService\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Models\\User.cs",
+              "RelativeToolTip": "UserService\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T06:34:18.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServiceToScope.cs",
+              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Utility\\ServiceToScope.cs",
+              "RelativeDocumentMoniker": "UserService\\Utility\\ServiceToScope.cs",
+              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Utility\\ServiceToScope.cs",
+              "RelativeToolTip": "UserService\\Utility\\ServiceToScope.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAswBAAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T06:35:34.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "UserService\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Controllers\\UserController.cs",
+              "RelativeToolTip": "UserService\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T06:32:52.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "UserService\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Services\\UserService.cs",
+              "RelativeToolTip": "UserService\\Services\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T06:36:06.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.csproj",
+              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService.csproj",
+              "RelativeDocumentMoniker": "UserService\\UserService.csproj",
+              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\UserService.csproj",
+              "RelativeToolTip": "UserService\\UserService.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-20T12:18:09.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Program.cs",
+              "RelativeDocumentMoniker": "UserService\\Program.cs",
+              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Program.cs",
+              "RelativeToolTip": "UserService\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T07:04:20.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUser.cs",
+              "DocumentMoniker": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Interfaces\\IUser.cs",
+              "RelativeDocumentMoniker": "UserService\\Interfaces\\IUser.cs",
+              "ToolTip": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\UserService\\UserService\\Interfaces\\IUser.cs",
+              "RelativeToolTip": "UserService\\Interfaces\\IUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T06:34:02.511Z",
+              "EditorCaption": ""
             }
           ]
         }
