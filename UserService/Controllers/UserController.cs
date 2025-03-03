@@ -13,20 +13,32 @@ namespace UserService.Controllers
     {
         private ILogger _logger;
         private IUser _user;
-        private readonly IConnection _connection;
+        private readonly Task<IConnection> _connectionTask;
         private readonly grpcUserService _grpcHelper;
-        private UserController(ILogger<UserController> logger, IUser user, RabbitMQConnectionHelper rabbitMQConnectionHelper, grpcUserService grpcUser)
+        private readonly UserServices _userServices;
+        private readonly RabbitMQConnectionHelper _rabbitMQ;
+        public UserController(ILogger<UserController> logger, IUser user, RabbitMQConnectionHelper rabbitMQConnectionHelper, grpcUserService grpcUser, UserServices userServices)
         {
             _logger = logger;
             _user = user;
-            _connection = rabbitMQConnectionHelper.GetConnection();
+            _connectionTask = rabbitMQConnectionHelper.GetConnectionAsync();
             _grpcHelper = grpcUser;
+            _userServices = userServices;
+            _rabbitMQ = rabbitMQConnectionHelper;
         }
 
         [HttpPost("ProducerRequest")]
         public async Task<IActionResult> Producer([FromBody] OrderModel order)
         {
-            _grpcHelper.SendMessageAsync(order, "orderQueue");
+            string requestQueue = "requestQueue";
+            string responseQueue = "responseQueue";
+
+
+            await _grpcHelper.SendMessageAsync(requestQueue, responseQueue, "Hello from User!");
+
+            var listener = new Utility.ReceiveResponse(_rabbitMQ);
+            listener.ListenForResponse(responseQueue);
+            // await _grpcHelper.SendMessageAsync(order, "orderQueue");
             return Ok("Order sent to Rabbit MQ");
         }
     }

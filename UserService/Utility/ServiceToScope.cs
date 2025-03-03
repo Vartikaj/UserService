@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System.Configuration;
 using UserService.Interfaces;
+using UserService.Services;
 
 namespace UserService.Utility
 {
@@ -14,7 +15,7 @@ namespace UserService.Utility
 
         public void AddToScope(IServiceCollection service)
         {
-           // service.AddTransient<IUser>(s=> new UserService());
+           service.AddTransient<IUser>(s=> new UserServices());
 
         }
     }

@@ -7,26 +7,40 @@ namespace UserService.Services
 {
     public class grpcUserService
     {
-        private readonly IConnection _connection;
+        private readonly Task<IConnection> _connectionTask;
         public grpcUserService(RabbitMQConnectionHelper rabbitMq)
         {
-            _connection = rabbitMq.GetConnection();
+            _connectionTask = rabbitMq.GetConnectionAsync();
         }
 
-        public async Task SendMessageAsync<T> (T message, string queueName)
+        public async Task SendMessageAsync<T> (string requestQueue, string responseQueue, T message)
         {
-            using var channel = await _connection.CreateChannelAsync();
+            var connection = await _connectionTask;
+            var channel = await  connection.CreateChannelAsync();
 
             //Declare a queue
-            await channel.QueueDeclareAsync(queue: "hello", durable:false, exclusive:false, autoDelete : false, arguments : null);
+            await channel.QueueDeclareAsync(
+                queue: requestQueue, 
+                durable:false, 
+                exclusive:false, 
+                autoDelete : false, 
+                arguments : null
+               );
+
+            var props = await channel.BasicProperties();
+            props.ReplyTo = responseQueue;
+            
+
             string jsonMessage = JsonSerializer.Serialize(message);
             byte[] body = Encoding.UTF8.GetBytes(jsonMessage);
 
             //Publish message
             await channel.BasicPublishAsync(
                 exchange: "",
-                routingKey: queueName,
+                routingKey: requestQueue,
                 body: body);
+
+            Console.WriteLine($"[Master] Sent Request: {message}");
         }
 
     }
