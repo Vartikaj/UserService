@@ -1,6 +1,7 @@
 ﻿using CommonService.Utility;
 using Microsoft.AspNetCore.Mvc;
 using RabbitMQ.Client;
+using UserService.Interfaces;
 using UserService.Models;
 using UserService.Services;
 
@@ -11,15 +12,15 @@ namespace UserService.Controllers
     public class UserController : ControllerBase
     {
         private ILogger _logger;
+        private IUser _user;
         private readonly IConnection _connection;
         private readonly grpcUserService _grpcHelper;
-        private readonly UserServices _userService;
-        public UserController(ILogger<UserController> logger,RabbitMQConnectionHelper rabbitMQConnectionHelper, grpcUserService grpcUser, UserServices userService)
+        private UserController(ILogger<UserController> logger, IUser user, RabbitMQConnectionHelper rabbitMQConnectionHelper, grpcUserService grpcUser)
         {
             _logger = logger;
+            _user = user;
             _connection = rabbitMQConnectionHelper.GetConnection();
             _grpcHelper = grpcUser;
-            _userService = userService;
         }
 
         [HttpPost("ProducerRequest")]
