@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "ContainingType": "UserService.Controllers.UserController",
+    "Method": "Producer",
+    "RelativePath": "api/controller/ProducerRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "order",
+        "Type": "UserService.Models.OrderModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

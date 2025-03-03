@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -10,13 +10,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.2"/>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="libs/" Include="libs/"/>
-    <Reference Include="CommonService">
-      <HintPath>libs/CommonService.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="libs/"/>
-  </ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="libs/" />
+		<Reference Include="CommonService">
+			<HintPath>libs/CommonService.dll</HintPath>
+		</Reference>
+	</ItemGroup>
 </Project>
