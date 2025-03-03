@@ -7,15 +7,15 @@ namespace UserService.Services
 {
     public class grpcUserService
     {
-        private readonly IConnection _connection;
+        private readonly Task<IConnection> _connectionTask;
         public grpcUserService(RabbitMQConnectionHelper rabbitMq)
         {
-            _connection = rabbitMq.GetConnection();
+            _connectionTask = rabbitMq.GetConnection();
         }
 
         public async Task SendMessageAsync<T> (T message, string queueName)
         {
-            using var channel = await _connection.CreateChannelAsync();
+            using var channel = await _connectionTask.CreateChannelAsync();
 
             //Declare a queue
             await channel.QueueDeclareAsync(queue: "hello", durable:false, exclusive:false, autoDelete : false, arguments : null);
