@@ -1,7 +1,9 @@
 ﻿using CommonService.Utility;
 using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 using System.Text;
 using System.Text.Json;
+using RabbitMQ.Client;
 
 namespace UserService.Services
 {
@@ -16,7 +18,7 @@ namespace UserService.Services
         public async Task SendMessageAsync<T> (string requestQueue, string responseQueue, T message)
         {
             var connection = await _connectionTask;
-            var channel = await  connection.CreateChannelAsync();
+            using var channel = await connection.CreateChannelAsync();
 
             //Declare a queue
             await channel.QueueDeclareAsync(
@@ -27,7 +29,7 @@ namespace UserService.Services
                 arguments : null
                );
 
-            var props = await channel.BasicProperties();
+            var props = new BasicProperties();
             props.ReplyTo = responseQueue;
             
 

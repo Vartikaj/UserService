@@ -41,7 +41,8 @@ namespace UserService.Utility
                 consumer: consumer
                 );
 
-            Console.WriteLine($"[Master] Sent Request: {message}");
+            Console.WriteLine($"[Consumer] Sent Request:");
+            Console.ReadLine();
         }
     }
 }
