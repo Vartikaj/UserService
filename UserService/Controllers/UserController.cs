@@ -4,6 +4,7 @@ using RabbitMQ.Client;
 using UserService.Interfaces;
 using UserService.Models;
 using UserService.Services;
+using UserService.Utility;
 
 namespace UserService.Controllers
 {
@@ -33,13 +34,10 @@ namespace UserService.Controllers
             string requestQueue = "requestQueue";
             string responseQueue = "responseQueue";
 
+            var rabbitClient = new grpcUserService(_rabbitMQ);
+            string response = await rabbitClient.SendMessageAsync(requestQueue, responseQueue, order);
 
-            await _grpcHelper.SendMessageAsync(requestQueue, responseQueue, "Hello from User!");
-
-            var listener = new Utility.ReceiveResponse(_rabbitMQ);
-            listener.ListenForResponse(responseQueue);
-            // await _grpcHelper.SendMessageAsync(order, "orderQueue");
-            return Ok("Order sent to Rabbit MQ");
+            return Ok($"Response from Master: {response}");
         }
     }
 }

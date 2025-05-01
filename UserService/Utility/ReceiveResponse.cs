@@ -15,10 +15,11 @@ namespace UserService.Utility
             _connectionTask = rabbitMQConnectionHelper.GetConnectionAsync();
         }
 
-        public async void ListenForResponse(string responseQueue)
+        public async Task<string> ListenForResponse(string responseQueue)
         {
             var connection = await _connectionTask;
             var channel = await connection.CreateChannelAsync();
+            var tcs = new TaskCompletionSource<string>();
 
             channel.QueueDeclareAsync(queue: responseQueue,
                 durable: false,
@@ -32,7 +33,9 @@ namespace UserService.Utility
             {
                 var body = ea.Body.ToArray();
                 var message = Encoding.UTF8.GetString(body);
-                Console.WriteLine(message);
+                Console.WriteLine($"[UserService] Received Response: {message}");
+                tcs.TrySetResult(message);
+                await Task.Yield(); // prevent warning
             };
 
             channel.BasicConsumeAsync(
@@ -41,8 +44,7 @@ namespace UserService.Utility
                 consumer: consumer
                 );
 
-            Console.WriteLine($"[Consumer] Sent Request:");
-            Console.ReadLine();
+            return await tcs.Task;
         }
     }
 }
