@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MasterServiceDemo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8a8c47ccad66b144224f2726700e768ca3071ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a5b23d468ed7916a4ad70843fdad5aa1dd076c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("MasterServiceDemo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MasterServiceDemo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

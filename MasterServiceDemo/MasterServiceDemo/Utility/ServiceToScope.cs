@@ -1,5 +1,7 @@
-﻿using MasterServiceDemo.Interfaces;
+﻿using CommonService.Utility;
+using MasterServiceDemo.Interfaces;
 using MasterServiceDemo.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace MasterServiceDemo.Utility
 {
@@ -14,8 +16,7 @@ namespace MasterServiceDemo.Utility
         public void AddToScope(IServiceCollection services)
         {
             services.AddTransient<IUser>(s => new UserService(Configuration.GetSection("ConnectionString:SqlConnection").Value));
+            // services.AddTransient<ConsumerService>();
         }
-
-
     }
 }

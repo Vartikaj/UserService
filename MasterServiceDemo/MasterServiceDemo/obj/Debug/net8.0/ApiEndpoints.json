@@ -1,12 +1,18 @@
 [
   {
     "ContainingType": "MasterServiceDemo.Controllers.UserController",
-    "Method": "GetAllData",
+    "Method": "StartConsumer",
     "RelativePath": "User",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

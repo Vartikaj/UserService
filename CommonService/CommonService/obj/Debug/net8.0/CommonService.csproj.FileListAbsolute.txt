@@ -58,3 +58,4 @@ C:\Users\Hied\Desktop\ProjectDevelopment\GRPC\CommonService\CommonService\bin\De
 C:\Users\Hied\Desktop\ProjectDevelopment\GRPC\CommonService\CommonService\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 C:\Users\Hied\Desktop\ProjectDevelopment\GRPC\CommonService\CommonService\bin\Debug\net8.0\StackExchange.Redis.dll
 C:\Users\Hied\Desktop\ProjectDevelopment\GRPC\CommonService\CommonService\bin\Debug\net8.0\StackExchange.Redis.StrongName.dll
+C:\Users\Hied\Desktop\ProjectDevelopment\GRPC\CommonService\CommonService\bin\Debug\net8.0\RabbitMQ.Client.dll

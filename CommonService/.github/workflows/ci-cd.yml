@@ -1,0 +1,103 @@
+name : Continuous integration and development
+
+on : 
+  push:
+    branches:
+      - master
+
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛠️ Set up Repository
+        uses: actions/checkout@v3
+      
+      - name: 🏗️ Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xmlstarlet
+      
+      - name: 🖥️ Prevent `stty` Warnings (Set TERM Variable)
+        run: echo "TERM=dumb" >> $GITHUB_ENV
+
+      - name: 🏗️ Setup .dotnet8
+        uses : actions/setup-dotnet@v3
+        with :
+          dotnet-version: '8.0.*'
+
+      - name: Restore Dependencies
+        run: dotnet restore
+
+      - name : Remove old Build
+        run : dotnet clean CommonService/CommonService.csproj
+
+      - name: Build app
+        run: dotnet build CommonService/CommonService.csproj --configuration Release --verbosity detailed
+
+      - name: Publish DLL
+        run : dotnet publish CommonService/CommonService.csproj --configuration Release --output ./publish
+
+      - name: Verify DLL
+        run: ls -l ./publish
+
+      # - name: Configure TERM for Session
+      #   run: echo "export TERM=xterm" >> ~/.bashrc
+
+      # - name: Suppress stty Warnings
+      #   run: |
+      #     export TERM=dumb
+      #     stty sane || true
+
+      # - name: Change Directory Permissions
+      #   run: |
+      #     sudo chmod -R 777 /usr/local/include/node
+      #     sudo chmod -R 777 /usr/local/share
+
+        # Function to Clone, Copy, Commit, and Push
+      - name: Update DLL in Multiple Repositories
+        run: |
+          update_repo() {
+            REPO=$1
+            REPOPATH=$2
+            CSPROJ_FILE="$REPO/$REPOPATH/$REPOPATH.csproj"  # Assuming the csproj file is named same as repo
+            CSPROJ_FILE2="$REPOPATH/$REPOPATH.csproj"
+
+            git clone https://github.com/Vartikaj/$REPO.git
+            mkdir -p $REPO/$REPOPATH/libs
+            sudo cp -r ./publish/CommonService.dll $REPO/$REPOPATH/libs
+
+            echo "Updating .csproj file..."
+            # Add <Folder Include="libs\" /> if not present
+            if ! grep -q '<Folder Include="libs\" />' "$CSPROJ_FILE"; then
+              xmlstarlet ed --inplace -s "/Project" -t elem -n "ItemGroup" -v "" \
+                -s "/Project/ItemGroup[last()]" -t elem -n "Folder" -v "" \
+                -i "/Project/ItemGroup/Folder" -t attr -n "Include" -v "libs/" \
+                "$CSPROJ_FILE"
+            fi
+            
+            if ! grep -q '<Reference Include="CommonService">' "$CSPROJ_FILE"; then
+                xmlstarlet ed --inplace -s "/Project" -t elem -n "ItemGroup" -v "" \
+                    -s "/Project/ItemGroup[last()]" -t elem -n "Reference" -v "" \
+                    -i "/Project/ItemGroup/Reference" -t attr -n "Include" -v "CommonService" \
+                    -s "/Project/ItemGroup/Reference" -t elem -n "HintPath" -v "libs/CommonService.dll" \
+                    "$CSPROJ_FILE"
+            fi
+
+            echo "Committing changes..."
+            cd $REPO
+            git config --global user.name "GitHub Actions"
+            git config --global user.email "actions@github.com"
+            git add $REPOPATH/libs/CommonService.dll
+            git add $CSPROJ_FILE2
+            git commit -m "Updated CommonService.dll and .csproj - $(date)"
+            git push https://x-access-token:${{ secrets.GIT_PAT_SECERTS }}@github.com/Vartikaj/$REPO.git HEAD:master
+            cd ..
+          }
+
+          update_repo "MasterService" "MasterServiceDemo"
+          update_repo "UserService" "UserService"
+        env:
+          GH_PAT: ${{ secrets.GIT_PAT_SECERTS }}
+          
+          

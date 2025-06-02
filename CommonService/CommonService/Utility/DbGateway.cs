@@ -24,7 +24,7 @@ namespace CommonService.Utility
 
         public IDbConnection Connection()
         {
-            return (IDbConnection)new MySqlConnection(_connectionString);
+            return new MySqlConnection(_connectionString);
         }
 
         //Execute a single-row query asynchronously using Task.
@@ -40,7 +40,7 @@ namespace CommonService.Utility
                         conn.Open();
                     }
 
-                    result = await SqlMapper.QueryFirstOrDefaultAsync<T>(conn, QueryText, (object)paras, (IDbTransaction)null, (int?)null, (CommandType?)null);
+                    result = await conn.QueryFirstOrDefaultAsync<T>(QueryText, (object)paras, (IDbTransaction)null, (int?)null, (CommandType?)null);
                 }
                 return result;
 
@@ -63,7 +63,7 @@ namespace CommonService.Utility
                         conn.Open();
                     }
 
-                    result = await SqlMapper.ExecuteAsync(conn, QueryText, (object)paras, (IDbTransaction)null, (int?)null, (CommandType?)null);
+                    result = await conn.ExecuteAsync(QueryText, (object)paras, (IDbTransaction)null, (int?)null, (CommandType?)null);
                 }
                 return result;
             }
@@ -85,7 +85,7 @@ namespace CommonService.Utility
                         conn.Open();
                     }
 
-                    return (await SqlMapper.QueryAsync<T>(conn, QueryText, (object)paras, (IDbTransaction)null, (int?)null, (CommandType?)null)).ToList();
+                    return (await conn.QueryAsync<T>(QueryText, (object)paras, (IDbTransaction)null, (int?)null, (CommandType?)null)).ToList();
                 }
             }
             catch (Exception ex)
@@ -104,12 +104,34 @@ namespace CommonService.Utility
                 using (IDbConnection conn = Connection())
                 {
                     if (conn.State == ConnectionState.Closed) { conn.Open(); }
-                    result = await SqlMapper.QueryFirstOrDefaultAsync<T>(conn, QueryText, (object)null, (IDbTransaction)null, (int?)null, (CommandType?)null);
+                    result = await conn.QueryFirstOrDefaultAsync<T>(QueryText, (object)null, (IDbTransaction)null, (int?)null, (CommandType?)null);
                 }
 
                 return result;
             }
             catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        //for taking list of values
+        public async Task<List<T>> ExeQueryList<T> (string QueryText)
+        {
+            try
+            {
+                List<T> result;
+                using(IDbConnection conn = Connection())
+                {
+                    if(conn.State == ConnectionState.Closed)
+                    {
+                        conn.Open();
+                    }
+
+                    result = (await conn.QueryAsync<T>(QueryText)).ToList();
+                }
+                return result;
+            } catch (Exception ex)
             {
                 throw ex;
             }
@@ -127,7 +149,7 @@ namespace CommonService.Utility
                     if (conn.State == ConnectionState.Closed) { conn.Open(); }
 
                     CommandType? commandType = CommandType.StoredProcedure;
-                    result = await SqlMapper.QueryFirstAsync<T>(conn, QueryText, (object)null, (IDbTransaction)null, (int?)null, commandType);
+                    result = await conn.QueryFirstAsync<T>(QueryText, (object)null, (IDbTransaction)null, (int?)null, commandType);
                 }
                 return result;
 
@@ -151,7 +173,7 @@ namespace CommonService.Utility
                     }
 
                     CommandType? commandType = CommandType.StoredProcedure;
-                    return (await SqlMapper.QueryAsync<T>(conn, QueryText, (object)param, (IDbTransaction)null, (int?)null, commandType)).ToList();
+                    return (await conn.QueryAsync<T>(QueryText, (object)param, (IDbTransaction)null, (int?)null, commandType)).ToList();
                 }
             }
             catch (Exception ex)
@@ -174,7 +196,7 @@ namespace CommonService.Utility
                     }
 
                     CommandType? commandType = CommandType.StoredProcedure;
-                    result = await SqlMapper.ExecuteAsync(conn, QueryText, (object)param, (IDbTransaction)null, (int?)null, commandType);
+                    result = await conn.ExecuteAsync(QueryText, (object)param, (IDbTransaction)null, (int?)null, commandType);
                 }
 
                 return result;

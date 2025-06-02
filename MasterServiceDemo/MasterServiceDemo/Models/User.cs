@@ -13,4 +13,20 @@ namespace MasterServiceDemo.Models
         [StringLength(6)]
         public string LoginOTP { get; set; }
     }
+
+    public class UserModel
+    {
+        public string iduserData { get; set; }
+        public string userDatacol { get; set; }
+        public string userEmail { get; set; }
+        public string userPhone { get; set; }
+
+    }
+
+    public class OrderModel
+    {
+        public int Id { get; set; }
+        public string ProductName { get; set; }
+        public int Quantity { get; set; }
+    }
 }

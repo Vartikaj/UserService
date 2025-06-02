@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\masterServiceDemo\\MasterServiceDemo\\MasterServiceDemo.csproj": {}
+    "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\MasterServiceDemo\\MasterServiceDemo\\MasterServiceDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\masterServiceDemo\\MasterServiceDemo\\MasterServiceDemo.csproj": {
+    "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\MasterServiceDemo\\MasterServiceDemo\\MasterServiceDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\masterServiceDemo\\MasterServiceDemo\\MasterServiceDemo.csproj",
+        "projectUniqueName": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\MasterServiceDemo\\MasterServiceDemo\\MasterServiceDemo.csproj",
         "projectName": "MasterServiceDemo",
-        "projectPath": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\masterServiceDemo\\MasterServiceDemo\\MasterServiceDemo.csproj",
+        "projectPath": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\MasterServiceDemo\\MasterServiceDemo\\MasterServiceDemo.csproj",
         "packagesPath": "C:\\Users\\Hied\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\masterServiceDemo\\MasterServiceDemo\\obj\\",
+        "outputPath": "C:\\Users\\Hied\\Desktop\\ProjectDevelopment\\GRPC\\MasterServiceDemo\\MasterServiceDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hied\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[9.0.1, )"
@@ -52,6 +56,18 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[9.0.1, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.2.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[7.1.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

@@ -1,4 +1,4 @@
-namespace UserService
+namespace CustomMiddleWare
 {
     public class WeatherForecast
     {
